@@ -1,2 +1,6 @@
 print x >= 10
 "wtf is goin on"
+/* cainele
+mananca
+salam
+*/

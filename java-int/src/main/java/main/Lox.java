@@ -1,4 +1,7 @@
-package lox;
+package main;
+
+import parser.Scanner;
+import parser.Token;
 
 import java.io.IOException;
 import java.io.BufferedReader;
@@ -7,7 +10,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
-// TODO: Vezi daca trebuie sau nu sa dai import la scanner
+
 
 public class Lox {
     static boolean hadError = false;
@@ -51,7 +54,7 @@ public class Lox {
         }
     }
 
-    static void error(int line, String message){
+    public static void error(int line, String message){
         report(line, "", message);
     }
 

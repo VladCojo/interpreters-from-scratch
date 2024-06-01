@@ -1,11 +1,12 @@
-package lox;
+package parser;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import main.Lox;
 
-import static lox.TokenType.*;
+import static parser.TokenType.*;
 
 public class Scanner {
     private final String source;
@@ -39,11 +40,11 @@ public class Scanner {
     }
 
 
-    Scanner(String source){
+    public Scanner(String source){
         this.source = source;
     }
 
-    List<Token> scanTokens(){
+    public List<Token> scanTokens(){
         while(!isAtEnd()){
             start = current;
             scanToken();

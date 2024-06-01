@@ -1,7 +1,7 @@
-package main;
+package lox.runtime;
 
-import parser.Scanner;
-import parser.Token;
+import lox.parser.Scanner;
+import lox.parser.Token;
 
 import java.io.IOException;
 import java.io.BufferedReader;

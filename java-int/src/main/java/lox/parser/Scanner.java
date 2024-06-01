@@ -1,12 +1,12 @@
-package parser;
+package lox.parser;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import main.Lox;
+import lox.runtime.Lox;
 
-import static parser.TokenType.*;
+import static lox.parser.TokenType.*;
 
 public class Scanner {
     private final String source;

@@ -77,7 +77,7 @@ public class Scanner {
                     // we verify if it is a comment
                     while(peek() != '\n' && !isAtEnd())
                         advance();
-                } else {
+                }  else {
                     addToken(SLASH);
                 }
                 break;

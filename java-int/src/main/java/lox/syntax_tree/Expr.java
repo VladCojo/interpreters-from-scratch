@@ -13,6 +13,8 @@ abstract class Expr {
         R visitLiteralExpr(Literal expr);
 
         R visitUnaryExpr(Unary expr);
+
+        //String visitBinaryExpr();
     }
 
     static class Binary extends Expr {

@@ -1,8 +1,4 @@
-package lox.syntax_tree;
-
-import lox.parser.Token;
-
-import java.util.List;
+package lox;
 
 abstract class Expr {
     interface Visitor<R> {
